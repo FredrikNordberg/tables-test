@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0;
+    background-color: white;
 }
 .app-container {
     display: flex;
@@ -37,13 +37,42 @@ body {
     justify-content: space-evenly;
   }
   
-  form * {
-    font-size: 28px;
-  }
-
   tr:hover {
-    background-color: lightgrey; /* Change this to your desired hover color */
-    cursor: pointer; /* Optional: Change cursor to pointer on hover */
+    background-color: lightgrey; 
+    
   }
 
+ 
+td button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+td button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+
+tr.row-hover {
+  background-color: lightgrey;
+}
+
+
+td button.active {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+ 
+ 
   
